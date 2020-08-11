@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Elhussein's Portfolio</title>
+    <link rel="icon" href="{{ url_for('static', filename='physics_logo.png') }}" type="image/png">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- <script src="script.js"></script> -->
+    <aside>
+      <!-- <div class='picture-border'></div> -->
+      <div class='info'>
+        <p class='name'>ELHUSSEIN ABDELHAMID</p>
+        <p>KING ABDULLAH ACADEMY</p>
+        <p>Herndon, VA</p>
+        <p id='class-of'>Class of 2021</p>
+        <p>Location: Sterling, VA</p>
+        <ul id='bio'>
+          <li>"American citizen and Honor student educated in both Egypt and the United States of America."</li>
+          <li>"Born in in Egypt in 2003 to an American doctor and Egyptian housewife."</li>
+          <li>"Has two American sisters 11 and 14 years of age."</li>
+          <li>"Lives and schools in the United States."</li>
+        </ul>
+      <div>
+      <div class='social-media'>    
+        <a target="_blank" href="https://www.linkedin.com/in/elhossein-emad-34ba861a9/" class="fa fa-linkedin"></a>
+        <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsttGMHmVVqTJxVkrDfRDGpRFBsWwDHfmjGnNLmgrGcBtJPbpHszVnBZSnPqVtxZnkMTGcMv" class="fa fa-google"></a>
+        <a target="_blank" href="https://twitter.com/alhosseinmrh/status/1002173407226662912" class="fa fa-twitter"></a>
+        <a target="_blank" href="https://www.instagram.com/elhussein_abdelhamid/" class="fa fa-instagram"></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100011538104164" class="fa fa-facebook"></a>
+        <a target="_blank" href="https://www.snapchat.com/add/alhosseinmrh" class="fa fa-snapchat-ghost"></a>   
+        <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <span class="iconify" data-icon="mdi-gmail" data-inline="false"></span>
+          <div class="envelope">
+              <div class="shadow">
+              </div>
+              <div class="shadow2">
+              </div>
+              <div class="line4">
+              </div>
+              <div class="line3">
+              </div>
+              <div class="line2">
+              </div>
+              <div class="line1">
+              </div>
+          </div>
+          -->
+      </div>
+    </aside>
+          <ul style=' margin: 0; margin-left: 35%;'>
+          {% for message in form.name.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          {% for message in form.email.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          {% for message in form.subject.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          {% for message in form.message.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          </ul>
+    <main>
+      <h1 id='title'>My Future Goals & Plans</h1>
+      <div class='plans'>
+        <div class='plan'>
+          <h3>CAREER INTERESTS</h3>
+          <ul>
+            <li>Physicist</li>
+            <li>Data scientest</li>
+            <li>Software Developers</li>
+            <li>Mathematician</li>
+          </ul>
+        </div>    
+        <div class='plan'>
+          <h3>LOCATION PREFERENCES</h3>
+          <ul>
+            <li>International Opportunities</li>
+          </ul>
+        </div>  
+        <div class='plan'>
+          <h3>NEXT STEPS</h3>
+          <ul>
+            <li>4-Year College</li>
+          </ul>
+        </div> 
+      </div> 
+      <div class='college-plan'>
+        <div id='arrow'></div>
+        <div id='majors'>
+          <h1>04</h1>
+          <h4>MAJORS CONSIDERING</h4>
+          <ul>
+            <li>Physics</li>
+            <li>Data science</li>
+            <li>Artificial Intelligence Development</li>
+            <li>Mathematics</li>
+          </ul>
+        </div>
+        <div id='colleges'>
+          <h1>04</h1>
+          <h4>INTERESTED IN</h4>
+          <ul>
+            <li>Massachusetts Institute Of Technology</li>
+            <li>Harvard University</li>
+            <li>Yale University</li>
+            <li>California Institute Of Technology</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div id='container'>
+      <div class='pers-info'>
+        <div class='head'>
+        <span class="navbar-toggle" id="first-js-navbar-toggle"><i id='first-btn' class='arrow right'></i></span><h2>Leadership roles</h2></div> 
+        <div id='first-js-menu'class='body hide'>
+          <ul>
+            <li>Class president for 2019-2020 school year</li>
+            <li>Student Ambassador for 2019-2020</li>
+            <li>Member of Student Government Association</li>
+            <li>President of KAA Science, Technology, Engineering, Art and Mathematics club</li>
+            <li>Captain of Robotics Team and Lead Robotic Builder at KAA STEAM club</li>
+            <li>Virginia governor’s schools STEAM nominee</li>
+          </ul>
+        </div>
+      </div>
+      <div class='pers-info'>
+        <div class='head'>
+        <span class="navbar-toggle" id="second-js-navbar-toggle"><i id='second-btn' class='arrow right'></i></span><h2>Memberships</h2></div> 
+        <div id='second-js-menu'class='body hide'>
+          <ul>
+            <li>Piano teacher and member of KAA music club</li>
+            <li>Member of Art club</li>
+            <li>Member of community service club</li>
+            <li>Member of Student Government Association</li>
+          </ul>
+        </div>
+      </div>
+      <div class='pers-info'>
+        <div class='head'>
+        <span class="navbar-toggle" id="third-js-navbar-toggle"><i id='third-btn' class='arrow right'></i></span><h2>Education and Training</h2></div> 
+        <div id='third-js-menu'class='body hide'>
+          <ul>
+            <li>Started private schooling in America in Fall of 2018 and expected to graduate in Summer of 2021</li>
+            <li>Currently enrolled in KING ABDULLAH ACADEMY at 11th grade</li>
+            <li>Follow a special educational program comprised of two simultaneous pathways:<ol>
+              <li>Full International Baccalaureate Diploma with high level classes in Mathematics, Biology and
+History</li>
+              <li>Advanced Placement pathway in Physics C and Calculus BC</li>
+            </ol></li>
+            <li>Progressed in English from ESL to English B and plan to advance to English A by next semester</li>
+            <li>Trained in robotics design and programing achieving A+ score in ROBOTC course</li>
+            <li>Maintained A score in Art Creative Design</li>
+            <li>Finished 9th grade with A+ ranking from Egypt in Summer of 2018</li>
+          </ul>
+        </div>
+      </div>
+      <div class='pers-info'>
+        <div class='head'>
+        <span class="navbar-toggle" id="forth-js-navbar-toggle"><i id='forth-btn' class='arrow right'></i></span><h2>Hobbies</h2></div> 
+        <div id='forth-js-menu'class='body hide'>
+          <ul>
+            <li>Playing piano</li>
+            <li>Playing basketball</li>
+            <li>Jogging</li>
+            <li>Painting</li>
+            <li>Watching soccer games</li>
+            <li>Watching adventure and science fiction movies</li>
+          </ul>
+        </div>
+      </div>
+      <h2 id='contact-me' style='margin-top: 60px;'>Contact me</h2>
+      <div class='form'>
+        
+        <form action="/" method='POST'>
+
+          {{ form.hidden_tag() }}
+          {{ form.name.label }}
+          {{ form.name }}
+          <ul>
+          {% for message in form.name.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          </ul>     
+          {{ form.email.label }}
+          {{ form.email }}
+          <ul>
+          {% for message in form.email.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          </ul>
+          {{ form.subject.label }}
+          {{ form.subject }}
+          <ul>
+          {% for message in form.subject.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          </ul>
+          {{ form.message.label }}
+          {{ form.message }}
+          <ul>
+          {% for message in form.message.errors %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+          </ul>
+      
+          <a href='#contact-me'>{{ form.submit }}</a>
+        </form>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
